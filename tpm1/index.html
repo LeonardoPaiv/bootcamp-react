@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Make up</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<style></style>
-<body>
-    <div class="container">
-        <header>
-            <h1 class="titulo">Make Up Catalog</h1>
-        </header>
+  </head>
+  <style></style>
+  <body>
+    <div class="container" id="container">
+      <header>
+        <h1 class="titulo">Make Up Catalog</h1>
+      </header>
 
-        <nav class="menu-bar">
-            <button id='clear'>Clear</button>
-            <button id='order'>
-                <i class="fas fa-arrow-up" id='arrowButton'></i> A
-            </button>
-            <span>
-                <input type="text" id="nameFilter" placeholder="Name">
-            </span>
-            <span>
-                <select name="brandsDropdown" id="brandsDropdown">
-                    <option value="">Select brand</option>
-                </select>
-            </span>
-            <span>
-                <select name="typeDropdown" id="typeDropdown">
-                    <option value="">Select type</option>
-                </select>
-            </span>
-        </nav>
+      <nav class="menu-bar">
+        <button id="clear">Clear</button>
+        <button id="order">
+          <i class="fas fa-arrow-up" id="arrowButton-alph"></i>
+          <p id="aphl-order">A-Z</p>
+        </button>
+        <button id="order-rating">
+          <i class="fas fa-arrow-up" id="arrowButton-rating"></i> Rating
+        </button>
+        <button id="order-price">
+          <i class="fas fa-arrow-up" id="arrowButton-price"></i> Price
+        </button>
+        <span>
+          <input type="text" id="nameFilter" placeholder="Name" />
+        </span>
+        <span>
+          <select name="brandsDropdown" id="brandsDropdown">
+            <option value="">Select brand</option>
+          </select>
+        </span>
+        <span>
+          <select name="typeDropdown" id="typeDropdown">
+            <option value="">Select type</option>
+          </select>
+        </span>
+      </nav>
 
-        <div id="products-card">
-        </div>
+      <div id="products-card"></div>
     </div>
 
     <script src="js/index.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/4eeec57674.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

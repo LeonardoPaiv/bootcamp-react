@@ -1,77 +1,197 @@
 body {
-    background: #dddddd;
+  background: #dddddd;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+}
+
+#dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25vw;
+
+  background: rgb(255, 255, 255);
+  border: 3px black solid;
+  border-radius: 15px 50px 30px;
+  padding: 25px;
+  z-index: 1000;
+}
+
+#dialog-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#product-collumn {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.product-atribute {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-atribute p {
+  padding: 5px;
+  background: #b3e2e7;
+  border-radius: 5px;
+  margin: 0;
+}
+
+#close-dialog {
+  background: none;
+  border: none;
+  height: fit-content;
+
+  cursor: pointer;
 }
 
 .titulo {
-    text-align: center;
+  text-align: center;
 }
 
 .menu-bar {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 
-    background: #1b1b1b;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
+  background: #1b1b1b;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.menu-bar button, .menu-bar span {
-    width: 18%;
+.menu-bar button,
+.menu-bar span {
+  width: 10%;
 }
 
-.menu-bar span input, .menu-bar span select {
-    width: 100%;
+.menu-bar span input,
+.menu-bar span select {
+  width: 100%;
 }
 
 #products-card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-evenly;
 }
 
-.product{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: background-color 0.3s;
 
-    width: 200px;
-    padding: 10px;
-    padding: 1em;
+  width: 200px;
+  padding: 10px;
+  padding: 1em;
 }
 
 .product:hover {
-    background: #bbbbbb;
+  background: #bbbbbb;
+  cursor: pointer;
 }
 
 .product-image {
-    width: auto;
-    height: auto;
-    max-width: 200px;
-    max-height: 200px;
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
 }
 
-.product-brands{
-    display: flex;
-    justify-content: space-between;
+.product-brands {
+  display: flex;
+  justify-content: space-between;
 }
 
 .brand {
-    padding: 5px;
-    border-radius: 5px;
-    background: #f3b8b8;
+  padding: 5px;
+  border-radius: 5px;
+  background: #f3b8b8;
 }
 
 .price {
-    background: #acd7ff;
-    padding: 5px;
-    border-radius: 5px;
+  background: #acd7ff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.checked {
+  color: #ffd814;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#order p {
+  margin: 0 3px;
+}
+
+.block {
+    pointer-events: none;
 }
