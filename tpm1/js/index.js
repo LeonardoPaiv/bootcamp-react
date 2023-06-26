@@ -123,9 +123,7 @@ const filterByName = () => {
 
 const filterByBrand = () => {
   let selectedBrand = brandDropdown.value;
-  let filteredProducts = products.filter((item) =>
-    item.brand ? item.brand.includes(selectedBrand) : item
-  );
+  let filteredProducts = products.filter((item) => item.brand == selectedBrand);
   let product = "";
   for (let item of filteredProducts) {
     product += templateProduct(item);
@@ -188,13 +186,7 @@ const orderByPrice = () => {
   let orderedProducts;
   if (isOrderedPrice === 1 || isOrderedPrice === -1) {
     orderedProducts = products.sort((a, b) => {
-      if (a.price < b.price) {
-        return -1;
-      }
-      if (a.price > b.price) {
-        return 1;
-      }
-      return 0;
+      return a.price - b.price;
     });
     isOrderedPrice = 2;
     arrowButtonPrice.className = "fas fa-arrow-down";
@@ -206,7 +198,7 @@ const orderByPrice = () => {
       if (a.price < b.price) {
         return 1;
       }
-      return 0;
+      return b.price - a.price;
     });
     isOrderedPrice = 1;
     arrowButtonPrice.className = "fas fa-arrow-up";
@@ -273,22 +265,20 @@ const adicionarEventClickAoProduct = () => {
 };
 
 const openDialog = async (prodId) => {
-  const prodi = await products.find(i => i.id == prodId);
-  let dialog = document.createElement('div');
-  dialog.id = 'dialog';
+  const prodi = await products.find((i) => i.id == prodId);
+  let dialog = document.createElement("div");
+  dialog.id = "dialog";
   dialog.innerHTML = `
 <div id="dialog-container">
   <div id="product-collumn">
     <div class="product-atribute">
       <label>Brand</label>
-      <p>${prodi.brand ? prodi.brand : ''}</p>
+      <p>${prodi.brand ? prodi.brand : ""}</p>
     </div>
     <div class="product-atribute">
       <label>Price</label>
       <p>R$: ${
-        prodi.price
-          ? (prodi.price * 5.5).toFixed(2).replace(".", ",")
-          : "0,00"
+        prodi.price ? (prodi.price * 5.5).toFixed(2).replace(".", ",") : "0,00"
       }</p>
     </div>
     <div class="product-atribute">
@@ -311,16 +301,16 @@ const openDialog = async (prodId) => {
   <button id="close-dialog">X</button>
 </div>
   `;
-  document.querySelector('body').appendChild(dialog)
-  const closeButton = document.getElementById('close-dialog')
-  closeButton.addEventListener('click', removeDialog)
-  containe.classList.add('block')
+  document.querySelector("body").appendChild(dialog);
+  const closeButton = document.getElementById("close-dialog");
+  closeButton.addEventListener("click", removeDialog);
+  containe.classList.add("block");
 };
 
 const removeDialog = () => {
-  document.getElementById('dialog').remove();
-  containe.classList.remove('block')
-}
+  document.getElementById("dialog").remove();
+  containe.classList.remove("block");
+};
 
 clearbutton.addEventListener("click", clear);
 
