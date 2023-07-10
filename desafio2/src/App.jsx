@@ -5,7 +5,7 @@ import { investimentos } from "./data/investimentios";
 function App() {
   return (
     <div className="flex flex-column w-full">
-      <Header titulo="React Invest" />
+      <Header titulo="React Investments" />
       {investimentos.investments.map((investiment) => (
         <InvestimentCard
           key={investiment.id}
