@@ -1,0 +1,72 @@
+h2 {
+    text-align: center;
+    font-family: Lato;
+    font-size: 2.5rem;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.search {
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+    grid-template-rows: repeat(3, 100px);
+    
+}
+.chart {
+    grid-column: 10/13;
+    grid-row: 1/3;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+.form {
+    grid-column: 2/9;
+    grid-row: 1/3;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 48px;
+}
+
+#search-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#search-form input, #search-form button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#search-form input {
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+#search-form button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-form button:hover {
+    background-color: #0056b3;
+}
+button {
+    font-family: Roboto;
+    font-size: 1.2rem;
+}
+label {
+    font-family: Roboto;
+    font-size: 1rem;
+}

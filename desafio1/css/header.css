@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #8b52ff;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.imagem__grafico {
+    max-width: 1000px;
+    height: auto;
+}
+.main {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+}
+.imagem__virus {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    width: 150px;
+}
+.logo__xp {
+    width: 152px;
+}
+h1 {
+    grid-row: 2/3;
+    grid-column: 2/7;
+    font-family: Lato;
+    font-size: 3rem;
+    color: white;
+}
+p {
+    grid-row: 3/6;
+    grid-column: 2/5;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    color: #c7b6e7;
+}
+a {
+    grid-row-start: 5;
+    grid-column: 2/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid #39c2fe;
+    border-radius: 25px;
+    font-family: Lora;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+a:hover {
+    grid-row-start: 5;
+    grid-column: 2/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 25px;
+    font-family: Lora;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
