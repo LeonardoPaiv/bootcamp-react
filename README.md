@@ -2,6 +2,14 @@
  Works and Challenges of XPE React Bootcamp.
  Trabalhos e desafios do bootcamp XPE React.
 
+ #### Challenge 02 / Desafio 02
+
+ In Challenge 02, it was necessary to retrieve data from a backend provisioned using JSON Server and the "elections.json" file in the "data" folder. Once the raw information from the file was retrieved, it was necessary to process and manipulate the data to provide relevant and organized information to the users accurately. For the development of this application, React was used, and a strong emphasis was placed on best practices, avoiding prop drilling and utilizing lifting up state concepts. To retrieve the data, the Axios framework was used with established methods in the "services" folder to prevent code duplication that could occur in larger projects.
+
+ No Desafio 02, foi necessário recuperar os dados de um backend provisionado a partir do JSON Server e do arquivo "elections.json" na pasta "data". Uma vez recuperadas as informações brutas encontradas no arquivo, foi necessário tratar e manipular os dados para fornecer informações relevantes aos usuários de forma organizada e assertiva. Para o desenvolvimento dessa aplicação, foi utilizado o React, e um ponto forte de prática foram as boas práticas, evitando o "prop drilling" e usando conceitos de "lifting up state". Para a recuperação de dados, foi utilizado o framework Axios com métodos estabelecidos na pasta "services" para evitar a duplicação de código que poderia ocorrer em projetos maiores.
+
+ ![challenge02](https://github.com/LeonardoPaiv/botcamp-react/blob/main/imagens/desafio02.png?raw=true)
+
 #### Practical Assignment 02 / Trabalho Prático 02
 
 In Practical Assignment number 2, it was necessary to use fictitious data about investment funds and build a mobile-first interface to display and manipulate the data to make it more explanatory
