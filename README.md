@@ -2,7 +2,15 @@
  Works and Challenges of XPE React Bootcamp.
  Trabalhos e desafios do bootcamp XPE React.
 
- #### Challenge 02 / Desafio 02
+#### Practical Assignment 03 / Trabalho Prático 03
+
+In Practical Work 3, we started using React with TypeScript in our application, along with implementing the Google interface called 'Material UI.' This way, we developed more robust applications with the security of TypeScript and a more professional appearance, using well-known components from Google. The challenge involved retrieving data from a backend provisioned by Json-server and making requests that already brought filtered data based on the reference month and year.
+
+No Trabalho Prático 3, começamos a utilizar o React com TypeScript em nossa aplicação, além de implementar a interface do Google chamada "Material UI". Dessa forma, desenvolvemos aplicações mais sólidas e seguras usando TypeScript, ao mesmo tempo em que conseguimos uma aparência mais profissional, graças aos componentes conhecidos do Google. O desafio consistiu em recuperar dados de um backend provisionado pelo Json-server e fazer requisições, trazendo os dados já filtrados de acordo com o mês e ano de referência.
+
+![tpm3](https://github.com/LeonardoPaiv/botcamp-react/blob/main/imagens/tpm3.png?raw=true)
+
+#### Challenge 02 / Desafio 02
 
  In Challenge 02, it was necessary to retrieve data from a backend provisioned using JSON Server and the "elections.json" file in the "data" folder. Once the raw information from the file was retrieved, it was necessary to process and manipulate the data to provide relevant and organized information to the users accurately. For the development of this application, React was used, and a strong emphasis was placed on best practices, avoiding prop drilling and utilizing lifting up state concepts. To retrieve the data, the Axios framework was used with established methods in the "services" folder to prevent code duplication that could occur in larger projects.
 

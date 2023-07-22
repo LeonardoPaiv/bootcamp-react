@@ -1,9 +1,18 @@
-import Button from "@mui/material/Button";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import DespesasMain from "./pages/DespesasMain";
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <DespesasMain />
+    }
+  ])
+
   return (
-    <div className="text-center bg-blue-200">
-      <Button variant="contained">Hello World</Button>
+    <div className="d-flex flex-column min-h-screen">
+      <RouterProvider router={router}/>
     </div>
   );
 }
