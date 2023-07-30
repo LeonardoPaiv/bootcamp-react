@@ -2,6 +2,10 @@
  Works and Challenges of XPE React Bootcamp.
  Trabalhos e desafios do bootcamp XPE React.
 
+#### Challenge 03 / Desafio 03
+
+ ![challenge03](https://github.com/LeonardoPaiv/botcamp-react/blob/main/imagens/desafio03.png?raw=true)
+
 #### Practical Assignment 03 / Trabalho Prático 03
 
 In Practical Work 3, we started using React with TypeScript in our application, along with implementing the Google interface called 'Material UI.' This way, we developed more robust applications with the security of TypeScript and a more professional appearance, using well-known components from Google. The challenge involved retrieving data from a backend provisioned by Json-server and making requests that already brought filtered data based on the reference month and year.
