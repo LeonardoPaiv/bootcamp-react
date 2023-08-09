@@ -2,6 +2,22 @@
  Works and Challenges of XPE React Bootcamp.
  Trabalhos e desafios do bootcamp XPE React.
 
+#### Practical Assignment 04 / Trabalho Prático 04
+
+##### English:
+
+This was an introductory activity to the Next.js framework, where we delved into the advantages of utilizing this framework. We developed an application that follows the best practices for web page rendering, employing a hybrid approach involving SSG, SSR, and CSR.
+
+Consequently, static contents are generated on the server side, resulting in swifter load times for these sections. Moreover, resources that require frequent updates are retrieved on the client side, delivering fresh data at the moment of request.
+
+##### Português:
+
+Esta foi uma atividade introdutória ao framework Next.js, durante a qual exploramos as vantagens de utilizar este framework. Desenvolvemos uma aplicação que adere às melhores práticas de renderização de páginas web, empregando uma abordagem híbrida que engloba SSG, SSR e CSR.
+
+Dessa forma, os conteúdos estáticos são gerados no lado do servidor, o que resulta em maior rapidez nas seções correspondentes. Além disso, recursos sujeitos a atualizações frequentes são recuperados no lado do cliente, proporcionando a obtenção de dados atualizados no momento da requisição.
+
+![tpm4](https://github.com/LeonardoPaiv/botcamp-react/blob/main/imagens/tpm4.png?raw=true)
+
 #### Challenge 03 / Desafio 03
 
 ##### English:
