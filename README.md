@@ -1,6 +1,6 @@
 # bootcamp-react-XPE
  Works and Challenges of XPE React Bootcamp.
- Trabalhos e desafios do bootcamp XPE React.
+ Trabalhos e desafios do bootcamp XPE React. 
 
 #### Practical Assignment 04 / Trabalho Prático 04
 
